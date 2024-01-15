@@ -1,0 +1,28 @@
+# Bashrc folder
+#
+# 1. This folder will be mounted to /etc/bashrc-devilbox.d
+# 2. All files ending by *.sh will be sourced by bash automatically
+#    for the devilbox and root user.
+#
+
+
+# Add your custom vimrc and always load it with vim.
+# Also make sure you add vimrc to this folder.
+alias vim='vim -u /etc/bashrc-devilbox.d/vimrc
+
+
+# laravel
+alias pa='php artisan'
+alias par:l='php artisan route:list'
+alias pam='php artisan migrate'
+alias pam:f='php artisan migrate:fresh'
+alias pam:fs='php artisan migrate:fresh --seed'
+alias cu='composer update'
+alias ci='composer install'
+alias cda='composer dump-autoload -o'
+alias vu='cd ~/Homestead && vagrant up'
+alias vs='vagrant suspend'
+alias vssh='vagrant ssh'
+
+
+

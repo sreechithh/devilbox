@@ -1,0 +1,7 @@
+sudo systemctl stop httpd mysql
+
+sudo systemctl start docker
+
+export PHP_SERVER=$1
+
+docker-compose up httpd php mysql redis -d
